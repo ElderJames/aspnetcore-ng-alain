@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./wwwroot/dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -15,7 +15,7 @@
       "es2017",
       "dom"
     ],
-    "baseUrl": "src/",
+    "baseUrl": "ClientApp/src/",
     "paths": {
         "@shared": [ "app/shared" ],
         "@shared/*": [ "app/shared/*" ],

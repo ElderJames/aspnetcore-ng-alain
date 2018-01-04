@@ -4,8 +4,8 @@
         "name": "ng-alain"
     },
     "apps": [{
-        "root": "src",
-        "outDir": "dist",
+        "root": "ClientApp/src",
+        "outDir": "wwwroot",
         "assets": [
             "assets",
             "favicon.ico"
@@ -21,9 +21,9 @@
             "styles.less"
         ],
         "scripts": [
-            "../node_modules/@antv/g2/dist/g2.min.js",
-            "../node_modules/@antv/data-set/dist/data-set.min.js",
-            "../node_modules/@antv/g2-plugin-slider/dist/g-2.0.0.min.js"
+            "../../node_modules/@antv/g2/dist/g2.min.js",
+            "../../node_modules/@antv/data-set/dist/data-set.min.js",
+            "../../node_modules/@antv/g2-plugin-slider/dist/g-2.0.0.min.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {
@@ -39,15 +39,15 @@
         }
     },
     "lint": [{
-            "project": "src/tsconfig.app.json",
+            "project": "ClientApp/src/tsconfig.app.json",
             "exclude": "**/node_modules/**"
         },
         {
-            "project": "src/tsconfig.spec.json",
+            "project": "ClientApp/src/tsconfig.spec.json",
             "exclude": "**/node_modules/**"
         },
         {
-            "project": "e2e/tsconfig.e2e.json",
+            "project": "ClientApp/e2e/tsconfig.e2e.json",
             "exclude": "**/node_modules/**"
         }
     ],

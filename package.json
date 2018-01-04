@@ -104,7 +104,7 @@
     "webpack-bundle-analyzer": "^2.9.0"
   },
   "lint-staged": {
-    "src/**/*.ts": "lint:ts",
-    "src/**/*.less": "lint:style"
+    "ClientApp/src/**/*.ts": "lint:ts",
+    "ClientApp/src/**/*.less": "lint:style"
   }
 }

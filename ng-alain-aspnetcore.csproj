@@ -12,7 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
   </ItemGroup>
 
-  <Target Name="DebugRunNg" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
+  <Target Name="DebugRunNg" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\assets') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
       <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
@@ -38,12 +38,12 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
-  <Target Name="CleanDist" AfterTargets="Clean">
+  <!-- <Target Name="CleanDist" AfterTargets="Clean">
     <ItemGroup>
-      <FilesToDelete Include="wwwroot\**" />
+      <FilesToDelete Include="wwwroot\dist\**; wwwroot\assets\**" />
     </ItemGroup>
     <Delete Files="@(FilesToDelete)" />
-    <RemoveDir Directories="wwwroot\assets" />
-  </Target>
+    <RemoveDir Directories="wwwroot\dist; wwwroot\assets" />
+  </Target> -->
 
 </Project>
