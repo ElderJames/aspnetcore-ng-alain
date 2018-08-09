@@ -1,4 +1,4 @@
-# ng-alain-aspnetcore
+# aspnetcore-ng-alain
 
 Simple Integration of ng-alain 1.3.1 and ASP.NET Core 2.1
 
